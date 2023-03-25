@@ -1,3 +1,7 @@
+.PHONY: test
+test:
+	python -m unittest discover -s . -p "test*.py" -v
+
 include Makefile.venv
 Makefile.venv:
 	curl \
